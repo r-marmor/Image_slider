@@ -95,6 +95,8 @@ function emptyCircle() {
             }
             emptyCircle();
             triggerCircle();
+            clearInterval(interval);
+            interval = setInterval(timeOut, 5000);
         });
     });
 })();
